@@ -1,11 +1,28 @@
-# DevTools Day 03 Git Commands
+# DevTools Day 03 
+
+## Git Commands
 ```git remote add origin git@github.com:ang-jason8/amongus-devtools-day03.git```
 ```
 git remote add origin git@github.com:ang-jason8/amongus-devtools.git
 
 
 https://github.com/ang-jason8/amongus-devtools/compare/main...ang-jason8:my-change
+
 ```
+## Docker Hub
+
+- To generate access token
+```https://hub.docker.com/settings/security```
+- create associated secrets of github actions
+```
+DOCKER_HUB_USERNAME 
+DOCKER_HUB_ACCESS_TOKEN  
+```
+- Docs
+```https://github.com/marketplace/actions/build-and-push-docker-images```
+
+## Synk
+```https://github.com/snyk/actions/tree/master/docker#snyk-docker-action```
 
 # Among Us TODOs API
 
