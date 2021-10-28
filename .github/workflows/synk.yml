@@ -1,6 +1,8 @@
 
 name: synk scan
 
+jobs:
+
   scan:
     runs-on: ubuntu-latest
     steps:
