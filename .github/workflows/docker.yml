@@ -35,7 +35,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run Snyk to check for vulnerabilities
-        uses: snyk/actions/node@main
+        uses: snyk/actions/node@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
@@ -61,7 +61,7 @@ jobs:
           tags: ${{ env.TEST_TAG }}
 
       - name: Run Snyk to check Docker images for vulnerabilities
-        uses: snyk/actions/docker@main
+        uses: snyk/actions/docker@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
