@@ -5,8 +5,8 @@ on:
 
 env:
   IMAGE_NAME: amongus-devtools
-  TEST_TAG: ${{ secrets.DOCKER_HUB_USERNAME }}/amongus-devtools:test
-  RELEASE_TAG: ${{ secrets.DOCKER_HUB_USERNAME }}/amongus-devtools:lastest
+  TEST_TAG: ${{ secrets.DOCKER_HUB_USERNAME }}/ ${{ env.IMAGE_NAME }}:test
+  RELEASE_TAG: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
   EMAIL: email@email.com
 
 jobs:
