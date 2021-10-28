@@ -5,8 +5,8 @@ on:
 
 env:
   IMAGE_NAME: amongus-devtools
-  TEST_TAG: ${{ secrets.DOCKER_HUB_USERNAME }}/amongus-devtools:test
-  RELEASE_TAG: ${{ secrets.DOCKER_HUB_USERNAME }}/amongus-devtools:latest
+  TEST_TAG: ${{ secrets.DOCKERHUB_USERNAME }}/amongus-devtools:test
+  RELEASE_TAG: ${{ secrets.DOCKERHUB_USERNAME }}/amongus-devtools:latest
   EMAIL: email@email.com
 
 jobs:
@@ -125,8 +125,8 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.DOCKER_HUB_USERNAME }}
-          password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_ACCESS_TOKEN }}
 
       - name: Build and push
         id: docker_build
