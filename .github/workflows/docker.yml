@@ -64,6 +64,14 @@ jobs:
       #   run: |
       #     docker run --rm ${{ env.TEST_TAG }}
 
+      - name: Cache Docker layers
+        uses: actions/cache@v2
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-buildx-
+
 
       - name: Run Snyk to check Docker images for vulnerabilities
         uses: snyk/actions/docker@master
@@ -128,6 +136,9 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ${{ env.RELEASE_TAG }}
+
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache
 
       - name: Image digest
         run: |
