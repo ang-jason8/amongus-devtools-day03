@@ -2,11 +2,12 @@ name: git action to Docker Hub
 on:
   push:
     branches: [main]
-
+env-var:
+  IMAGE_NAME: amongus-devtools
 env:
   IMAGE_NAME: amongus-devtools
-  TEST_TAG: ${{ secrets.DOCKER_HUB_USERNAME }}/ ${{ env.IMAGE_NAME }}:test
-  RELEASE_TAG: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+  TEST_TAG: ${{ secrets.DOCKER_HUB_USERNAME }}/ ${{ env-var.IMAGE_NAME }}:test
+  RELEASE_TAG: ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env-var.IMAGE_NAME }}:latest
   EMAIL: email@email.com
 
 jobs:
