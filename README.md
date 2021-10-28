@@ -19,7 +19,9 @@ DOCKER_HUB_USERNAME
 DOCKER_HUB_ACCESS_TOKEN  
 ```
 - Docs
-```https://github.com/marketplace/actions/build-and-push-docker-images```
+```https://github.com/marketplace/actions/build-and-push-docker-images
+https://www.docker.com/blog/docker-github-actions/
+```
 
 ## Synk
 ```https://github.com/docker/build-push-action/blob/master/docs/advanced/test-before-push.md```
