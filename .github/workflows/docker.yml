@@ -60,9 +60,9 @@ jobs:
           load: true
           tags: ${{ env.TEST_TAG }}
 
-      - name: Test Docker image
-        run: |
-          docker run --rm ${{ env.TEST_TAG }}
+      # - name: Test Docker image
+      #   run: |
+      #     docker run --rm ${{ env.TEST_TAG }}
 
 
       - name: Run Snyk to check Docker images for vulnerabilities
