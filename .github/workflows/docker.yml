@@ -9,6 +9,7 @@ env:
   RELEASE_TAG: ${{ secrets.DOCKER_HUB_USERNAME }}/amongus-devtools:latest
   EMAIL: email@email.com
 
+
 jobs:
   npm-tests:
     runs-on: ubuntu-latest
