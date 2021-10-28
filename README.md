@@ -22,6 +22,7 @@ DOCKER_HUB_ACCESS_TOKEN
 ```https://github.com/marketplace/actions/build-and-push-docker-images```
 
 ## Synk
+```https://github.com/docker/build-push-action/blob/master/docs/advanced/test-before-push.md```
 ```https://github.com/snyk/actions/tree/master/docker#snyk-docker-action```
 
 # Among Us TODOs API
