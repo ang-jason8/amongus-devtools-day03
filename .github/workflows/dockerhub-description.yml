@@ -20,5 +20,5 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD  }}
         # repository: ${{ secrets.DOCKERHUB_USERNAME }}/${{env.IMAGE_NAME}}
-        repository: ${{ github.repository }}
+        repository: angjason/amongus-devtools
         short-description: ${{ github.event.repository.description }}
