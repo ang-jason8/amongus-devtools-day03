@@ -1,3 +1,6 @@
+# Git Remote Add
+```git remote add origin git@github.com:ang-jason8/amongus-devtools.git```
+
 # Among Us TODOs API
 
 ![Among Us banner](docs/img/banner.jpg)
