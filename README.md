@@ -1,4 +1,4 @@
-# Git Commands
+# DevTools Day 03 Git Commands
 ```git remote add origin git@github.com:ang-jason8/amongus-devtools-day03.git```
 ```
 git remote add origin git@github.com:ang-jason8/amongus-devtools.git
