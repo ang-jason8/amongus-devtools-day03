@@ -1,5 +1,6 @@
 # DevTools Day 03 
 
+
 ## Git Commands
 ```git remote add origin git@github.com:ang-jason8/amongus-devtools-day03.git```
 ```
@@ -26,6 +27,11 @@ https://www.docker.com/blog/docker-github-actions/
 ## Synk
 ```https://github.com/docker/build-push-action/blob/master/docs/advanced/test-before-push.md```
 ```https://github.com/snyk/actions/tree/master/docker#snyk-docker-action```
+
+## Heroku
+```https://amongus-devtools.herokuapp.com/todos```
+
+
 
 # Among Us TODOs API
 
