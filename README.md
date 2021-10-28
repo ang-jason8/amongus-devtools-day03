@@ -7,7 +7,6 @@ git remote add origin git@github.com:ang-jason8/amongus-devtools.git
 https://github.com/ang-jason8/amongus-devtools/compare/main...ang-jason8:my-change
 ```
 
-
 # Among Us TODOs API
 
 ![Among Us banner](docs/img/banner.jpg)
